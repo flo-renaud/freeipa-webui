@@ -7,8 +7,8 @@ EXTRA_DIST =		\
 
 install-exec-local:
 	mkdir -p "$(DESTDIR)$(appdir)"
-	cp -p "dist/index.html" "$(DESTDIR)$(appdir)/index.html"
-	cp -rp "dist/assets" "$(DESTDIR)$(appdir)/assets"
+	cp -p "index.html" "$(DESTDIR)$(appdir)/index.html"
+	cp -rp "assets" "$(DESTDIR)$(appdir)/assets"
 
 dist-hook:
 	npm install
